@@ -46,7 +46,7 @@ const SavingsGoals = () => {
         <main className="bg-gold-1 bg-cover bg-center h-screen">
             <div className="px-8 py-8 max-w-[1200px] mx-auto">
                 <div className="bg-gold-4 rounded-[15px] p-8 shadow-md">
-                    <h1 className="text-3xl font-bold mb-4 text-yellow-700">Savings Goals</h1>
+                    <h1 className="text-3xl font-bold mb-4 text-black">Savings Goals</h1>
                     <div className="mb-4 flex flex-col md:flex-row gap-2">
                         <input
                             type="text"
@@ -62,7 +62,7 @@ const SavingsGoals = () => {
                             onChange={(e) => setNewGoal({ ...newGoal, target: Number(e.target.value) })}
                             className="mr-2 p-2 border border-yellow-500 rounded bg-yellow-50"
                         />
-                        <Button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded" onClick={addGoal}>Add Goal</Button>
+                        <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded" onClick={addGoal}>Add Goal</Button>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {goals.map((goal) => (
