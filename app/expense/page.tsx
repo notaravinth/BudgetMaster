@@ -1,9 +1,12 @@
+"use client"
+
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Table } from "@/components/ui/table";
 import { Trash2 } from "lucide-react";
+import { motion } from "framer-motion";
 
 const ExpenseTracker = () => {
   const [expenses, setExpenses] = useState([]);
@@ -36,48 +39,33 @@ const ExpenseTracker = () => {
   };
 
   return (
-    <div className="min-h-screen bg-yellow-400 p-10">
-      <h1 className="text-3xl font-bold text-black text-center">Bumblebee Expense Tracker</h1>
-      <Card className="mt-6 bg-black text-yellow-300 p-6 rounded-xl shadow-lg">
-        <CardContent>
-          <div className="flex gap-4">
-            <Input
-              placeholder="Description"
-              value={newExpense.description}
-              onChange={(e) => setNewExpense({ ...newExpense, description: e.target.value })}
-            />
-            <Input
-              type="number"
-              placeholder="Amount"
-              value={newExpense.amount}
-              onChange={(e) => setNewExpense({ ...newExpense, amount: e.target.value })}
-            />
-            <Button onClick={addExpense} className="bg-yellow-500 hover:bg-yellow-600 text-black">Add</Button>
-          </div>
-          <Table className="mt-6 w-full border border-yellow-500">
-            <thead>
-              <tr className="bg-yellow-600 text-black">
-                <th className="p-2">Description</th>
-                <th className="p-2">Amount</th>
-                <th className="p-2">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {expenses.map((expense) => (
-                <tr key={expense.id} className="border-t border-yellow-500 text-yellow-300">
-                  <td className="p-2">{expense.description}</td>
-                  <td className="p-2">${expense.amount}</td>
-                  <td className="p-2">
-                    <Button variant="ghost" onClick={() => deleteExpense(expense.id)}>
-                      <Trash2 className="text-red-500" />
-                    </Button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
-        </CardContent>
-      </Card>
+    <div className="flex items-center justify-center min-h-screen bg-yellow-400 p-10">
+      <motion.div 
+        initial={{ opacity: 0, y: -50 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.5 }}
+      >
+        <Card className="w-96 bg-black text-black p-6 rounded-xl shadow-lg">
+          <CardContent>
+            <h1 className="text-2xl font-bold text-center mb-4">Expense Tracker</h1>
+            <div className="flex flex-col gap-4">
+              <Input
+                placeholder="Description"
+                value={newExpense.description}
+                onChange={(e) => setNewExpense({ ...newExpense, description: e.target.value })}
+              />
+              <Input
+                type="number"
+                placeholder="Amount"
+                value={newExpense.amount}
+                onChange={(e) => setNewExpense({ ...newExpense, amount: e.target.value })}
+              />
+              <Button onClick={addExpense} className="bg-yellow-500 hover:bg-yellow-600 text-black">Add</Button>
+            </div>
+            
+          </CardContent>
+        </Card>
+      </motion.div>
     </div>
   );
 };
