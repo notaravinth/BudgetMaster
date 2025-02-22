@@ -28,7 +28,13 @@ export default {
     				'2': '#040404',
     				'3': '#0f0f0f'
     			},
-
+				yellow: {
+					'1': '#f9e79f',
+					'2': '#f7dc6f',
+					'3': '#d4ac0d',
+					'4': '#ffc300',
+					'5': '#f1c40f',
+				},
 				background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
     			card: {
