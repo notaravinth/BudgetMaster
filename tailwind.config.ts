@@ -22,8 +22,6 @@ export default {
 					'3': '#FFD700',
 					'4': '#ffcf40',
 					'5': '#ffdc73',
-
-
     			},
     			black: {
     				'1': '#000000',
