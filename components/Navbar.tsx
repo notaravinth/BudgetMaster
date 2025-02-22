@@ -11,10 +11,10 @@ import { usePathname } from "next/navigation";
 
 const navigation = [
     { name: "Home", href: "/", current: false },
-    { name: "Track Expense", href: "/expense", current: false },
+    { name: "Transactions", href: "/transactions", current: false },
     { name: "Savings Goals", href: "/savings", current: false },
-    { name: "Invest", href: "/invest", current: false },
-    { name: "Planning", href: "/plan", current: false },
+    { name: "Budgets", href: "/budgets", current: false },
+    { name: "Reports", href: "/report", current: false },
 ];
 
 function classNames(...classes: string[]) {

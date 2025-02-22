@@ -28,7 +28,8 @@ export default {
     				'2': '#040404',
     				'3': '#0f0f0f'
     			},
-    			background: 'hsl(var(--background))',
+
+				background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
     			card: {
     				DEFAULT: 'hsl(var(--card))',
