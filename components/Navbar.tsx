@@ -30,7 +30,7 @@ const Navbar = () => {
     }));
 
     return (
-        <Disclosure as="nav" className="bg-gold-1">
+        <Disclosure as="nav" className="bg-gold-3">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -52,7 +52,7 @@ const Navbar = () => {
                         <div className="flex shrink-0 items-center">
                             <img
                                 alt="TheCreativeXchange"
-                                src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=red&shade=500"
+                                src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=black"
                                 // width={64}
                                 // height={64}
                                 className="h-8 w-auto"
@@ -69,8 +69,8 @@ const Navbar = () => {
                                         }
                                         className={classNames(
                                             item.current
-                                                ? "bg-red-1 text-white"
-                                                : "text-gray-700 hover:bg-orange-400 hover:text-white",
+                                                ? "bg-black-1 text-white"
+                                                : "text-gray-700 hover:bg-yellow-200 hover:text-black-2",
                                             "rounded-md px-3 py-2 text-sm font-bold"
                                         )}
                                     >
@@ -85,12 +85,12 @@ const Navbar = () => {
                         <img
                             alt="TheCreativeXchange"
                             src="/logo.png"
-                            className="h-10 w-auto px-2"
+                            className="h-16 w-auto px-2"
                         />
                     </div>
 
                     <SignedOut>
-                        <div className="text-white bg-red-1 px-3 py-2 rounded-md font-bold">
+                        <div className="text-white bg-black-1 px-3 py-2 rounded-md font-bold">
                             <SignInButton />
                         </div>
                     </SignedOut>

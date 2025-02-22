@@ -17,15 +17,18 @@ export default {
     				'4': '#1E2757'
     			},
     			gold: {
-    				'1': '#FFD700'
+					'1': '#a67c00',
+					'2': '#bf9b30',
+					'3': '#FFD700',
+					'4': '#ffcf40',
+					'5': '#ffdc73',
+
+
     			},
-    			sky: {
-    				'1': '#C9DDFF',
-    				'2': '#ECF0FF',
-    				'3': '#F5FCFF'
-    			},
-    			red: {
-    				'1': '#ff3131'
+    			black: {
+    				'1': '#000000',
+    				'2': '#040404',
+    				'3': '#0f0f0f'
     			},
     			background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
