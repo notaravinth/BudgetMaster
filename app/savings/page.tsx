@@ -46,7 +46,7 @@ const SavingsGoals = () => {
         <main className="bg-gold-1 bg-cover bg-center h-screen">
             <div className="px-8 py-8 max-w-[1200px] mx-auto">
                 <div className="bg-gold-4 rounded-[15px] p-8 shadow-md">
-                    <h1 className="text-3xl font-bold mb-4 text-black">Savings Goals</h1>
+                    <h1 className="text-3xl font-bold mb-4 text-black-3">Savings Goals</h1>
                     <div className="mb-4 flex flex-col md:flex-row gap-2">
                         <input
                             type="text"

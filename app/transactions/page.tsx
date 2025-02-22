@@ -180,7 +180,7 @@ const ExpenseTracker = () => {
 										</select>
 									</div>
 								</div>
-								<div className="form-row">
+								<div className="grid grid-cols-2 gap-4 mb-5">
 									<div className="mb-5">
 										<label className="block text-black-3 mb-2 font-medium">Category</label>
 										<select

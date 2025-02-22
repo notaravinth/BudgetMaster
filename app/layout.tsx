@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Budget Tracker",
-    description: "The Advanced Skill Bartering Platform",
+    title: "BudgetMaster",
+    description: "The Budget Tracking Experience for Everyone",
     icons: {
         icon: "/logo.png",
     },
@@ -29,13 +29,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <ClerkProvider
-                appearance={{
-                    layout: {
-                        logoImageUrl: "/logoFull.png",
-                    },
-                }}
-            >
+            <ClerkProvider>
                 <body
                     className={`${geistSans.variable} ${geistMono.variable} antialiased`}
                 >
