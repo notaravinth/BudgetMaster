@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-export default function Budgets() {
+export default function Budget() {
     const [budgets, setBudgets] = useState([]);
     const [showAddModal, setShowAddModal] = useState(false);
     const [totalBudgeted, setTotalBudgeted] = useState(0);

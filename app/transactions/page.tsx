@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-const ExpenseTracker = () => {
+const Transactions = () => {
 	const [transactions, setTransactions] = useState([]);
 	const [showAddModal, setShowAddModal] = useState(false);
 	const [filter, setFilter] = useState('all');
@@ -221,4 +221,4 @@ const ExpenseTracker = () => {
 	);
 };
 
-export default ExpenseTracker;
+export default Transactions;
