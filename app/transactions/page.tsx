@@ -21,7 +21,7 @@ const Transactions = () => {
 
 	const fetchTransactions = async () => {
 		try {
-			const response = await fetch('http://localhost:5000/api/transactions');
+			const response = await fetch('http://localhost:5001/api/transactions');
 			if (!response.ok) throw new Error('Failed to fetch transactions');
 			const data = await response.json();
 			setTransactions(data);
@@ -33,7 +33,7 @@ const Transactions = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const response = await fetch('http://localhost:5000/api/transactions', {
+			const response = await fetch('http://localhost:5001/api/transactions', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

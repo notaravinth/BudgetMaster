@@ -24,7 +24,7 @@ export default function Budget() {
 
     const fetchBudgets = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/budgets');
+            const response = await fetch('http://localhost:5001/api/budgets');
             if (!response.ok) throw new Error('Failed to fetch budgets');
             const data = await response.json();
             setBudgets(data);
@@ -36,7 +36,7 @@ export default function Budget() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/api/budgets', {
+            const response = await fetch('http://localhost:5001/api/budgets', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

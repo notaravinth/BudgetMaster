@@ -15,7 +15,7 @@ export default function Report() {
     const fetchTransactions = async () => {
         try {
             const response = await fetch(
-                `http://localhost:5000/api/transactions/report?timeframe=${timeframe}`
+                `http://localhost:5001/api/transactions/report?timeframe=${timeframe}`
             );
 
             if (!response.ok) throw new Error("Failed to fetch transactions");
