@@ -73,7 +73,7 @@ export default function Report() {
     };
 
     return (
-        <main className="bg-gold-1 bg-cover bg-center h-screen">
+        <main className="bg-gold-1 bg-cover bg-center h-screen overflow-scroll">
             <div className="px-8 py-8 max-w-5xl mx-auto">
                 <div className="flex justify-between items-center mb-8">
                     <h1 className="text-black-3 font-bold text-3xl">
