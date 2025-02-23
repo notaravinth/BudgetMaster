@@ -64,7 +64,7 @@ export default function Budget() {
     };
 
     return (
-        <main className="bg-gold-1 bg-cover bg-center h-screen overflow-scroll">
+        <main className="bg-gold-1 bg-cover bg-center bg-no-repeat h-screen overflow-scroll">
             <div className="px-4 md:px-8 p-8 max-w-[1200px] mx-auto">
                 <div className="mb-8">
                     <div className="bg-gold-4 rounded-xl p-8 shadow-md">
