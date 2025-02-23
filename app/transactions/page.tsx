@@ -72,7 +72,7 @@ const Transactions = () => {
 			.reduce((sum, t) => sum + t.amount, 0);
 	};
 	return (
-		<main className="bg-gold-1 h-screen bg-center bg-cover">
+		<main className="bg-gold-1 h-screen bg-center bg-cover overflow-scroll">
 			<div className="px-8 py-8 max-w-[1200px] mx-auto">
 				<div className="mb-8">
 					<div className="bg-gold-4 rounded-[15px] p-8 shadow-md">
