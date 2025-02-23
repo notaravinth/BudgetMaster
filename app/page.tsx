@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
     return (
-		<main className="bg-gold-1 bg-cover bg-center bg-no-repeat h-screen overflow-hidden">
+		<main className="bg-gold-1 bg-cover bg-center bg-no-repeat h-screen overflow-scroll">
 			<div className= "px-8 py-4 max-w-screen-xl mx-auto">
 				<section className="text-center px-4 py-12 mb-12 bg-gold-2 rounded-[15px] shadow-md">
 					<h1 className="text-[2.5rem] font-bold text-black-3 mb-4">Welcome to Your Personal Budget Tracker</h1>
